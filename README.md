@@ -1,3 +1,9 @@
+# A simple, no-frills online notepad
+
+I've always wanted a simple online notepad where I don't have to see social buttons or sidebars or ads, that's always elegant and easy to use. This is what I've come up with - a Flask+MySQL driven notepad. It automatically stores pages when your done typing and it also saves versions (which can be accessed via ```url.com/Note?version=1```). 
+
+[Live Demo here](http://cowgo.com)
+
 # Requirements
 
 You'll need to install Python, gunicorn, and the Flask libraries:
