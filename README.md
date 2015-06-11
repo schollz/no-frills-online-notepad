@@ -1,8 +1,8 @@
 # A simple, no-frills online notepad
 
-I've always wanted a simple online notepad where I don't have to see social buttons or sidebars or ads, that's always elegant and easy to use. This is what I've come up with - a Flask+MySQL driven notepad. It automatically stores pages when your done typing and it also saves versions (which can be accessed via ```url.com/Note?version=1```). 
+I've always wanted a simple online notepad where I don't have to see social buttons or sidebars or ads, that's always elegant and easy to use. This is what I've come up with - a Flask+MySQL driven notepad. It generates unique easy-to-remember unique  identifiers for each note and automatically stores pages when your done typing. As a bonus feature, it also saves versions (which can be accessed via ```url.com/Note?version=1```). 
 
-[Live Demo here](http://cowyo.com)
+[Live Demo here](http://cowyo.com) and more information [here](http://cowyo.com/about).
 
 # Requirements
 
@@ -10,14 +10,13 @@ You'll need to install Python, gunicorn, and the Flask libraries:
 
 ```sudo pip install flask flask-socketio flask-mysql gunicorn```
 
-You'll also need to setup MySQL and NGINX/Apache (not expalined here)
-
+You'll also need to setup MySQL, which is explained elsewhere.
 
 # Setup
 
 ## Make the MySQL table
 
-Login to your MySQL table. To make a new database with table and permissions you can use the following:
+Once you have MySQL running, llogin to your MySQL table. To make a new database with table and permissions you can use the following:
 
 ```
 create database DB_NAME;
